@@ -2,6 +2,9 @@
 
 A Typescript library prepared according to the documentation of the Valorant-API.com website.
 
+### Setup
+```npm install valorant-api.ts```
+
 ### Usage
 You can review the examples below to use the valorant-api.ts library in your project:
 
