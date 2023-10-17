@@ -1,7 +1,31 @@
 import { Request } from "./core";
-import { Agents, Buddies, Bundles, Ceremonies, CompetitiveTiers, ContentTiers, Contracts, Currencies, Events, Gamemodes, Gears, LevelBorders, Maps, PlayerCards, PlayerTitles, Seasons, Sprays, Themes, Version, Weapons } from "./endpoints";
+import {
+  Agents,
+  Buddies,
+  Bundles,
+  Ceremonies,
+  CompetitiveTiers,
+  ContentTiers,
+  Contracts,
+  Currencies,
+  Events,
+  Gamemodes,
+  Gears,
+  LevelBorders,
+  Maps,
+  PlayerCards,
+  PlayerTitles,
+  Seasons,
+  Sprays,
+  Themes,
+  Version,
+  Weapons,
+} from "./endpoints";
 
-class ValorantApi {
+export * from "./types";
+export * from "./responses";
+
+export class ValorantApi {
   public request = new Request(this);
   public agents = new Agents(this);
   public buddies = new Buddies(this);
@@ -24,5 +48,3 @@ class ValorantApi {
   public weapons = new Weapons(this);
   public version = new Version(this);
 }
-
-export { ValorantApi };
