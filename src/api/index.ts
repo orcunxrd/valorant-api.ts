@@ -25,7 +25,7 @@ import {
 export * from "./types";
 export * from "./responses";
 
-export class ValorantApi {
+class ValorantApi {
   public request = new Request(this);
   public agents = new Agents(this);
   public buddies = new Buddies(this);
@@ -48,3 +48,5 @@ export class ValorantApi {
   public weapons = new Weapons(this);
   public version = new Version(this);
 }
+
+export { ValorantApi };
